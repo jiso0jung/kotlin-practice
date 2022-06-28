@@ -1,0 +1,2 @@
+* [Spring Boot + Kotlin + JPA 공식 가이드](https://spring.io/guides/tutorials/spring-boot-kotlin/) 실습 
+* [따라하면서 실수했던 부분들 정리](https://velog.io/@wltn716/Kotlin-SpringBoot-JPA-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EB%94%B0%EB%9D%BC%ED%95%A0-%EB%95%8C-%EC%A3%BC%EC%9D%98%ED%95%A0-%EC%A0%90)
