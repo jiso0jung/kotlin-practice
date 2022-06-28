@@ -1,0 +1,18 @@
+package com.example.demo.controller
+
+import com.example.demo.entity.Users
+import com.example.demo.repository.UsersRepository
+import org.springframework.http.HttpStatus.*
+import org.springframework.web.bind.annotation.*
+import org.springframework.web.server.ResponseStatusException
+
+@RestController
+@RequestMapping("/api/user")
+class UsersController(private val repository: UsersRepository) {
+
+    @GetMapping("/")
+    fun findAll(): Iterable<Users> = repository.findAll()
+
+    @GetMapping("/{login}")
+    fun findOne(@PathVariable login: String) = repository.findByLogin(login) ?: throw ResponseStatusException(NOT_FOUND, "This user does not exist")
+}
