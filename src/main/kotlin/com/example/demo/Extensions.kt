@@ -8,11 +8,11 @@ import java.util.*
 private const val DAY_START = 1
 private const val DAY_END = 31
 private const val DECIMAL = 10
-private const val ELEVENTH = 11
-private const val THIRTEENTH = 13
-private const val FIRST = 1
-private const val SECOND = 2
-private const val THIRD = 3
+private const val ELEVEN_TH = 11
+private const val THIRTEEN_TH = 13
+private const val FIR_ST = 1
+private const val SECO_ND = 2
+private const val THI_RD = 3
 
 fun LocalDateTime.format(): String = this.format(englishDateFormatter)
 
@@ -27,10 +27,10 @@ private val englishDateFormatter = DateTimeFormatterBuilder()
     .toFormatter(Locale.ENGLISH)
 
 private fun getOrdinal(n: Int) = when {
-    n in ELEVENTH..THIRTEENTH -> "${n}th"
-    n % DECIMAL == FIRST -> "${n}st"
-    n % DECIMAL == SECOND -> "${n}nd"
-    n % DECIMAL == THIRD -> "${n}rd"
+    n in ELEVEN_TH..THIRTEEN_TH -> "${n}th"
+    n % DECIMAL == FIR_ST -> "${n}st"
+    n % DECIMAL == SECO_ND -> "${n}nd"
+    n % DECIMAL == THI_RD -> "${n}rd"
     else -> "${n}th"
 }
 
