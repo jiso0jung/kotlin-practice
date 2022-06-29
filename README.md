@@ -4,11 +4,16 @@
 
 ## 사용 환경 및 Tool
 * Kotlin 1.6.21
-* jvm 17
+* jdk 17
 * Spring Boot 2.7.1
 * IntelliJ IDEA 2022.1 (Ultimate Edition)
 
 ## 프로젝트 사전 설정
+#### Amazon corretto 17
+* File | ProjectStructure 에서 SDK Edit
+* Amazon corretto 17 다운로드 후 설정
+![img_2.png](img_2.png)
+
 #### kapt
 * Preferences | Build, Execution, Deployment | Compiler | Annotation Processors 창 열기
 * enable annotation processing 체크![img.png](img.png)
