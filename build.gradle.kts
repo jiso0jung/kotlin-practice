@@ -23,13 +23,14 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-mustache")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    runtimeOnly("mysql:mysql-connector-java")
     runtimeOnly("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("com.h2database:h2")
     kapt("org.springframework.boot:spring-boot-configuration-processor")
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.21.0-RC1")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
@@ -38,6 +39,7 @@ dependencies {
     }
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("com.h2database:h2")
     testImplementation("com.ninja-squad:springmockk:3.1.1")
 }
 
