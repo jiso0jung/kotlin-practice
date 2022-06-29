@@ -11,8 +11,9 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager
 
 @DataJpaTest
 class UsersRepositoryTest @Autowired constructor(
-        val entityManager: TestEntityManager,
-        val usersRepository: UsersRepository) {
+    val entityManager: TestEntityManager,
+    val usersRepository: UsersRepository
+) {
 
     @Test
     fun `When findByLogin then return User`() {

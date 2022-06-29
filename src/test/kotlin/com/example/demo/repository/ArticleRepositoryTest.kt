@@ -13,8 +13,9 @@ import org.springframework.data.repository.findByIdOrNull
 
 @DataJpaTest
 class ArticleRepositoryTest @Autowired constructor(
-        val entityManager: TestEntityManager,
-        val articleRepository: ArticleRepository) {
+    val entityManager: TestEntityManager,
+    val articleRepository: ArticleRepository
+) {
 
     @Test
     fun `when findByIdOrNull then return Article`() {

@@ -13,5 +13,4 @@ open class MockkTestBase(@Autowired val mockMvc: MockMvc) {
 
     @MockkBean
     lateinit var articleRepository: ArticleRepository
-
 }

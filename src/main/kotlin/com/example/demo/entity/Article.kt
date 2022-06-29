@@ -1,3 +1,5 @@
+@file:Suppress("LongParameterList")
+
 package com.example.demo.entity
 
 import com.example.demo.toSlug
@@ -9,11 +11,11 @@ import javax.persistence.ManyToOne
 
 @Entity
 class Article(
-        var title: String,
-        var headline: String,
-        var content: String,
-        @ManyToOne var author: Users,
-        var slug: String = title.toSlug(),
-        var addedAt: LocalDateTime = LocalDateTime.now(),
-        @Id @GeneratedValue var id: Long? = null) {
-}
+    var title: String,
+    var headline: String,
+    var content: String,
+    @ManyToOne var author: Users,
+    var slug: String = title.toSlug(),
+    var addedAt: LocalDateTime = LocalDateTime.now(),
+    @Id @GeneratedValue var id: Long? = null
+)
