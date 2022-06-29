@@ -3,7 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "2.7.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    id("io.gitlab.arturbosch.detekt").version("1.21.0-RC1")
+    id("io.gitlab.arturbosch.detekt") version "1.21.0-RC1"
+    id("com.google.cloud.tools.jib") version "3.2.1"
 
     kotlin("jvm") version "1.6.21"
     kotlin("plugin.spring") version "1.6.21"
@@ -55,4 +56,30 @@ allOpen {
     annotation("javax.persistence.Entity")
     annotation("javax.persistence.Embeddable")
     annotation("javax.persistence.MappedSuperclass")
+}
+
+jib {
+    from {
+        image = "amazoncorretto:17.0.3"
+        platforms {
+            platform {
+                architecture = "arm64"
+                os = "linux"
+            }
+        }
+    }
+    to {
+        image = "jisoojung/kotlin-practice"
+
+        tags = setOf("latest")
+    }
+    container {
+        creationTime = "USE_CURRENT_TIMESTAMP"
+
+        jvmFlags = listOf(
+//            "-Dfile.encoding=UTF-8",
+//            "-XX:+UseContainerSupport"
+//            "-Dspring.profiles.active=local", 설정하지 않으면 default로 동작
+        )
+    }
 }
