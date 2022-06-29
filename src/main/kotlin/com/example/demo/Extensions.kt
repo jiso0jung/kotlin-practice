@@ -9,6 +9,7 @@ private const val DAY_START = 1
 private const val DAY_END = 31
 private const val DECIMAL = 10
 private const val ELEVEN_TH = 11
+private const val TWELVE_TH = 12
 private const val THIRTEEN_TH = 13
 private const val FIR_ST = 1
 private const val SECO_ND = 2
@@ -27,7 +28,7 @@ private val englishDateFormatter = DateTimeFormatterBuilder()
     .toFormatter(Locale.ENGLISH)
 
 private fun getOrdinal(n: Int) = when {
-    n in ELEVEN_TH..THIRTEEN_TH -> "${n}th"
+    n in arrayOf(ELEVEN_TH, TWELVE_TH, THIRTEEN_TH) -> "${n}th"
     n % DECIMAL == FIR_ST -> "${n}st"
     n % DECIMAL == SECO_ND -> "${n}nd"
     n % DECIMAL == THI_RD -> "${n}rd"
