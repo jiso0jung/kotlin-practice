@@ -8,7 +8,7 @@
 * Spring Boot 2.7.1
 * IntelliJ IDEA 2022.1 (Ultimate Edition)
 
-## 프로젝트 사전 설정
+## 설정
 #### Amazon corretto 17
 * File | ProjectStructure 에서 SDK Edit
 * Amazon corretto 17 다운로드 후 설정
@@ -20,3 +20,11 @@
 
 #### detekt
 * Preferences | Plugins 에서 Detekt 설치![img_1.png](images/img_1.png)
+
+## 도커
+#### 이미지 빌드
+`./gradlew jib`
+#### 컨테이너 실행
+`docker run -p 8080:8080 jisoojung/kotlin-practice
+`
+
