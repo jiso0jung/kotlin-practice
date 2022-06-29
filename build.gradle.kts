@@ -77,7 +77,7 @@ jib {
         creationTime = "USE_CURRENT_TIMESTAMP"
 
         jvmFlags = listOf(
-//            "-Dfile.encoding=UTF-8",
+            "-Dfile.encoding=UTF-8"
 //            "-XX:+UseContainerSupport"
 //            "-Dspring.profiles.active=local", 설정하지 않으면 default로 동작
         )

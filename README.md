@@ -24,6 +24,8 @@
 ## 도커
 #### 이미지 빌드
 `./gradlew jib`
+* 명령어에서 태그를 지정하려면 `-Djib.to.tags=xx` 옵션 추가
+* 이미지 빌드 전 `docker login` 필수
 #### 컨테이너 실행
 `docker run -p 8080:8080 jisoojung/kotlin-practice
 `
