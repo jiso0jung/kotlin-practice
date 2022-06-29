@@ -12,11 +12,11 @@
 #### Amazon corretto 17
 * File | ProjectStructure 에서 SDK Edit
 * Amazon corretto 17 다운로드 후 설정
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 #### kapt
 * Preferences | Build, Execution, Deployment | Compiler | Annotation Processors 창 열기
-* enable annotation processing 체크![img.png](img.png)
+* enable annotation processing 체크![img.png](images/img.png)
 
 #### detekt
-* Preferences | Plugins 에서 Detekt 설치![img_1.png](img_1.png)
+* Preferences | Plugins 에서 Detekt 설치![img_1.png](images/img_1.png)
