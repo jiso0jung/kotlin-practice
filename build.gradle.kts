@@ -37,10 +37,10 @@ dependencies {
         exclude(module = "junit")
         exclude(module = "mockito-core")
     }
-    testImplementation("org.junit.jupiter:junit-jupiter-api")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-    testRuntimeOnly("com.h2database:h2")
     testImplementation("com.ninja-squad:springmockk:3.1.1")
+    testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.testcontainers:junit-jupiter:1.17.3")
+    testImplementation("org.testcontainers:mysql:1.17.3")
 }
 
 tasks.withType<KotlinCompile> {

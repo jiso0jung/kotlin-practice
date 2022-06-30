@@ -1,2 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:tc:mysql:5.7.38:///test
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+
 demo:
   title: 'Blog'
