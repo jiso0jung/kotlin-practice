@@ -1,6 +1,6 @@
 @file:Suppress("LongParameterList")
 
-package com.example.demo.entity
+package com.example.demo.domain
 
 import com.example.demo.toSlug
 import java.time.LocalDateTime

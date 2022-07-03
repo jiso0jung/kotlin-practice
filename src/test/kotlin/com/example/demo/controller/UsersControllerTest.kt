@@ -2,7 +2,7 @@
 
 package com.example.demo.controller
 
-import com.example.demo.entity.Users
+import com.example.demo.domain.Users
 import io.mockk.every
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

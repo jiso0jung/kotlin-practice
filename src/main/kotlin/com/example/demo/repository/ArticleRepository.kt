@@ -1,6 +1,6 @@
 package com.example.demo.repository
 
-import com.example.demo.entity.Article
+import com.example.demo.domain.Article
 import org.springframework.data.repository.CrudRepository
 
 interface ArticleRepository : CrudRepository<Article, Long> {

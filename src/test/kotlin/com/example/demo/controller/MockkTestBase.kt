@@ -1,6 +1,7 @@
 package com.example.demo.controller
 
 import com.example.demo.repository.ArticleRepository
+import com.example.demo.repository.MembersRepository
 import com.example.demo.repository.UsersRepository
 import com.ninjasquad.springmockk.MockkBean
 import org.springframework.beans.factory.annotation.Autowired
@@ -13,4 +14,7 @@ open class MockkTestBase(@Autowired val mockMvc: MockMvc) {
 
     @MockkBean
     lateinit var articleRepository: ArticleRepository
+
+    @MockkBean
+    lateinit var membersRepository: MembersRepository
 }

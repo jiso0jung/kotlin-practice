@@ -1,6 +1,6 @@
 package com.example.demo.controller
 
-import com.example.demo.entity.Users
+import com.example.demo.domain.Users
 import com.example.demo.repository.UsersRepository
 import org.springframework.http.HttpStatus.NOT_FOUND
 import org.springframework.web.bind.annotation.GetMapping

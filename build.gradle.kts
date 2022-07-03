@@ -26,7 +26,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-mustache")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("com.google.code.gson:gson:2.9.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     runtimeOnly("mysql:mysql-connector-java")
@@ -37,8 +39,11 @@ dependencies {
         exclude(module = "junit")
         exclude(module = "mockito-core")
     }
+//    testImplementation("org.junit.jupiter:junit-jupiter-api")
+//    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+//    testRuntimeOnly("com.h2database:h2")
     testImplementation("com.ninja-squad:springmockk:3.1.1")
-    testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.testcontainers:testcontainers:1.17.3")
     testImplementation("org.testcontainers:junit-jupiter:1.17.3")
     testImplementation("org.testcontainers:mysql:1.17.3")
 }

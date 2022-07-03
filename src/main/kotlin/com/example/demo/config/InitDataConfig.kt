@@ -1,7 +1,7 @@
 package com.example.demo.config
 
-import com.example.demo.entity.Article
-import com.example.demo.entity.Users
+import com.example.demo.domain.Article
+import com.example.demo.domain.Users
 import com.example.demo.repository.ArticleRepository
 import com.example.demo.repository.UsersRepository
 import org.springframework.boot.ApplicationRunner

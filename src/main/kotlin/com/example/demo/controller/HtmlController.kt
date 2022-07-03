@@ -1,8 +1,8 @@
 package com.example.demo.controller
 
 import com.example.demo.DemoProperties
-import com.example.demo.entity.Article
-import com.example.demo.entity.Users
+import com.example.demo.domain.Article
+import com.example.demo.domain.Users
 import com.example.demo.format
 import com.example.demo.repository.ArticleRepository
 import org.springframework.http.HttpStatus

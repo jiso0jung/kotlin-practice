@@ -2,7 +2,7 @@
 
 package com.example.demo.repository
 
-import com.example.demo.entity.Users
+import com.example.demo.domain.Users
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

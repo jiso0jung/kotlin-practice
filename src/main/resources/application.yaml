@@ -6,6 +6,10 @@ spring:
     password:
     driver-class-name: com.mysql.jdbc.Driver
 
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
   jpa:
     hibernate:
       ddl-auto: create-drop
