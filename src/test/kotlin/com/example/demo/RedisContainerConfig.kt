@@ -1,11 +1,14 @@
+@file:Suppress("UtilityClassWithPublicConstructor")
+
 package com.example.demo
 
 import org.springframework.test.context.DynamicPropertyRegistry
 import org.springframework.test.context.DynamicPropertySource
 
-abstract class RedisContainerConfig {
+open class RedisContainerConfig {
     companion object {
-        var REDIS_CONTAINER: KGenericContainer = KGenericContainer("redis:7-alpine").withExposedPorts(6379)
+        @JvmStatic
+        val REDIS_CONTAINER: KGenericContainer = KGenericContainer("redis:7-alpine").withExposedPorts(6379)
 
         @JvmStatic
         @DynamicPropertySource
