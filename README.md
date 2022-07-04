@@ -21,6 +21,9 @@
 #### detekt
 * Preferences | Plugins 에서 Detekt 설치![img_1.png](images/img_1.png)
 
+#### Testcontainers
+* docker daemon 을 꼭 사전에 실행시켜야 한다. `service docker start`
+
 ## 도커
 #### 이미지 빌드
 `./gradlew jib`
